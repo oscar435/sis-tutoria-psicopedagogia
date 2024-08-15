@@ -1,0 +1,60 @@
+/* Estilos para el fondo del body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/fondoEstudiantes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 90%;
+    max-width: 40em; /* Aproximadamente 600px, pero en unidades responsivas */
+    margin: 2em auto;
+    padding-left: 0.8em;
+    padding-right: 0.7;
+    padding-top: 0.3em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el encabezado */
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+    margin: auto;
+}
+
+input[type="submit"] {
+    align-self: center;
+    padding: 0.8em 1.3em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

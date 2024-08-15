@@ -1,0 +1,99 @@
+Documentación del Proceso para Listar a los Tutores
+
+
+Este documento describe el proceso implementado para listar, buscar, editar y eliminar tutores en el 
+sistema de gestión. Se detalla la configuración de los archivos PHP, JavaScript y CSS necesarios para que
+la funcionalidad de gestión de tutores esté operativa en la plataforma. Además, se documentan las interacciones
+entre el frontend y backend, así como las funcionalidades de paginación y búsqueda dinámica.
+
+
+1. Estructura del Proyecto
+Archivos Involucrados:
+PHP:
+list_tutores_action.php: Recupera los datos de los tutores desde la base de datos.
+update_tutor.php: Actualiza la información de un tutor.
+delete_tutor.php: Elimina un tutor de la base de datos.
+view2homeAdmin.php: Archivo que contiene la estructura principal de la página.
+
+
+JavaScript:
+listTutores.js: Gestiona la interacción en el frontend, incluyendo la carga, búsqueda, edición y eliminación de tutores.
+CSS:
+listTutores.css: Estilos personalizados para la tabla de tutores y la interfaz de usuario.
+
+
+
+
+2. Descripción del Proceso
+
+2.1. Creación del Backend con PHP
+list_tutores_action.php: Este archivo es el núcleo del backend para listar tutores. Utiliza consultas SQL para recuperar la información desde la base de datos y devuelve los datos en formato JSON. La paginación y la búsqueda están integradas mediante parámetros GET.
+
+update_tutor.php: Permite la actualización de los datos de un tutor en la base de datos. Recibe los datos en formato JSON desde el frontend y ejecuta una consulta SQL para actualizar el registro correspondiente.
+
+delete_tutor.php: Maneja la eliminación de tutores. Recibe el codigo_docente del tutor a eliminar y ejecuta una consulta SQL para remover el registro de la base de datos.
+
+
+
+2.2. Desarrollo del Frontend con JavaScript
+listTutores.js: Este archivo controla toda la interacción del usuario con la interfaz de gestión de tutores.
+Carga inicial: Cuando se selecciona "Lista de Tutores" en el menú, se despliega una tabla en el contenedor principal (main-content) con los datos recuperados desde el backend.
+Paginación: Se implementa un sistema de paginación que permite navegar entre las páginas de tutores.
+Búsqueda Dinámica: Los usuarios pueden buscar tutores utilizando diferentes criterios (nombre, apellido, código, etc.).
+Edición y Eliminación: Los usuarios pueden editar los datos de un tutor directamente en la tabla y guardarlos. También es posible eliminar un tutor, lo que envía una solicitud al backend para eliminar el registro correspondiente.
+
+
+2.3. Estilos Personalizados con CSS
+listTutores.css: Este archivo define los estilos de la interfaz, incluyendo la tabla de tutores, botones de acción (editar, eliminar) y controles de paginación. Se asegura de que la presentación sea clara, accesible y uniforme.
+
+
+
+
+
+
+3. Flujo de Trabajo
+Acceso a la Lista de Tutores:
+
+El usuario selecciona "Lista de Tutores" en el menú.
+listTutores.js carga la tabla con la lista de tutores utilizando una llamada AJAX a list_tutores_action.php.
+Paginación y Búsqueda:
+
+El usuario puede navegar entre las páginas o buscar tutores específicos.
+La tabla se actualiza dinámicamente con los resultados filtrados o la página solicitada.
+Edición de Tutores:
+
+El usuario selecciona un tutor para editar y modifica los campos necesarios.
+Los cambios se envían a update_tutor.php mediante una solicitud AJAX, y la tabla se actualiza para reflejar los cambios.
+Eliminación de Tutores:
+
+El usuario puede eliminar un tutor utilizando el botón correspondiente.
+El registro se elimina del backend y la tabla se actualiza automáticamente.
+
+
+
+
+
+
+
+
+4. Detalles Técnicos
+Base de Datos:
+
+Tabla: tutor
+Campos Principales: codigo_docente, nombre, apellido, dni, telefono, correo_institucional, carrera
+Funciones JavaScript Principales:
+
+loadTutors(): Carga la lista de tutores.
+renderTutors(): Renderiza los datos de los tutores en la tabla.
+toggleEditMode(): Activa el modo edición para un registro específico.
+saveTutor(): Guarda los cambios realizados en un tutor.
+deleteTutor(): Elimina un tutor de la base de datos.
+
+
+
+
+
+
+
+
+

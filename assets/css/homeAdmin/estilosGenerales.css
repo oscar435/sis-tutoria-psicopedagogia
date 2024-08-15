@@ -1,0 +1,86 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Contenedor para la parte izquierda del encabezado */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/*DISEÑOS PARTE IZQUIERDA DEL HEADER*/
+/* Estilos para la información del administrador */
+.admin-info {
+    margin-left: 0.2em;
+
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+}
+
+.admin-text {
+    margin-left: 1.2em;
+    display: flex;
+    flex-direction: column; /* Alineación en columna */
+}
+
+/* Estilos para el título del administrador */
+.admin-title {
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 0.2em;
+}
+
+/* Estilos para el nombre del administrador */
+.admin-name {
+    font-size: 0.8em; /* Tamaño de fuente más pequeño para el nombre */
+    color: #ccc; /* Color gris claro para el nombre */
+}
+
+
+
+
+
+/*DISEÑOS PARTE DERECHA DEL HEADER*/
+/* Contenedor para la parte derecha del encabezado */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.logout-btn {
+    padding: 0.6em 1.5em;
+    background-color: #ca5050;
+    color: #fff;
+    border: none;
+    border-radius: 0.6em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Efecto de zoom al pasar el cursor sobre el botón */
+.logout-btn:hover {
+    transform: scale(1.05);
+}
+
+
+
+

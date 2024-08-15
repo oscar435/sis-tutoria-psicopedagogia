@@ -1,0 +1,33 @@
+
+
+
+Resumen del Proceso para la Gestión de Estudiantes:
+
+1. Archivo view2homeAdmin.php:
+
+Estructura la interfaz principal para el administrador.
+Incluye menús de navegación y un contenedor para el contenido dinámico.
+
+2. Archivo contenedorContenidos.php:
+Contenedor vacío que se actualiza dinámicamente con el contenido según las acciones del usuario.
+
+
+3. Archivo listEstudiante.css:
+Aplica estilos a la tabla de estudiantes y a los elementos de búsqueda y paginación.
+
+
+4. Archivo listEstudiante.js:
+Maneja la carga, visualización y edición de la lista de estudiantes.
+Implementa la búsqueda, paginación y funcionalidades CRUD (Crear, Leer, Actualizar, Eliminar).
+
+
+5. Archivo list_estudiantes_action.php:
+Interactúa con la base de datos para recuperar y devolver datos de estudiantes en formato JSON.
+Soporta búsqueda y paginación.
+
+
+6. Funcionalidad General:
+La interfaz permite al administrador buscar y gestionar estudiantes.
+Los resultados se actualizan dinámicamente en la tabla y se muestran con paginación.
+Las acciones de CRUD se realizan mediante peticiones AJAX al servidor.
+Este resumen proporciona una visión general rápida de cómo cada componente se integra en el proceso de gestión de estudiantes.

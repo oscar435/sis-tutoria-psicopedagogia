@@ -1,0 +1,2 @@
+Para solucionar este problema se tiene que ejecutar el archivo fetch_student_data.php,
+y esto sucede cada vez que el usuario cierra sesion y vuelve a entrar

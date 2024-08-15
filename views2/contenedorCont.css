@@ -1,0 +1,24 @@
+
+.container {
+    display: flex;
+    background: white;
+}
+
+.dashboard {
+    flex: 1;
+    background-image: url('../images/fondoEstudiantes.jpg'); /* Color naranja */
+    padding: 0.5em;
+    color: #fff;
+    overflow: auto;
+}
+
+#main-content {
+    width: 90%;
+    background: white;
+    display: block; /* Asegúrate de que el contenido no esté oculto */
+    padding: 0.6em;  /* Agrega un poco de espacio alrededor del contenido */
+    overflow: auto; /* Asegúrate de que el contenido sea visible si es más grande que el contenedor */
+    width: 97%;
+    background-color: rgba(255, 255, 255, 0.4); /* Blanco con 90% de opacidad */
+    margin-top: 0.1em;
+}

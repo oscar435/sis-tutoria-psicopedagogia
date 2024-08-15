@@ -1,0 +1,105 @@
+/* Estilos generales del formulario */
+#gestion-disponibilidad {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.25rem; /* 20px */
+  background-color: #f8f9fa;
+  border-radius: 0.5rem; /* 8px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  box-sizing: border-box;
+}
+
+/* Estilo del título principal */
+h2 {
+  text-align: center;
+  margin-bottom: 1rem; /* 16px */
+  color: #333;
+  font-size: 1.75rem; /* 28px */
+}
+
+/* Estilo de los títulos de grupo (h4) */
+.gestion-form-group h4 {
+  margin-bottom: 1rem; /* 16px */
+  color: #204492;
+  font-size: 1rem; /* 20px */
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Agrupación de elementos en filas horizontales */
+.gestion-horizontal-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* 16px */
+}
+
+/* Estilo de las etiquetas y los elementos de formulario */
+.gestion-input-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.gestion-input-wrapper label {
+  display: block;
+  margin-bottom: 0.5rem; /* 8px */
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem; /* 16px */
+}
+
+.gestion-input-wrapper input[type="text"], 
+.gestion-input-wrapper input[type="date"], 
+.gestion-input-wrapper select, 
+.gestion-input-wrapper textarea {
+  width: 100%;
+  padding: 0.4rem; /* 10px */
+  border: 1px solid #acacac;
+  background-color: #e6e5e5;
+  border-radius: 0.3125rem; /* 5px */
+  margin-bottom: 1rem; /* 15px */
+  box-sizing: border-box;
+  font-size: 0.8rem; /* 16px */
+}
+
+/* Ajustar el tamaño del textarea */
+.gestion-input-wrapper textarea {
+  resize: vertical;
+  height: 5rem; /* 100px */
+}
+
+/* Estilo de los botones */
+.gestion-buttons-container button {
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  border: none;
+  border-radius: 0.3125rem; /* 5px */
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem; /* 16px */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gestion-buttons-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Contenedor de botones centrado */
+.gestion-buttons-container {
+  text-align: center;
+}
+
+/* Estilo del grupo de elementos */
+.gestion-form-group {
+  margin-bottom: 1.5em; /* 24px */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .gestion-horizontal-group {
+      flex-direction: column;
+  }
+
+  .gestion-input-wrapper {
+      min-width: auto;
+  }
+}

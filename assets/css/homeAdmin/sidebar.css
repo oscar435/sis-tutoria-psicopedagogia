@@ -1,0 +1,83 @@
+/* sidebar.css */
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 15vw; /* Ajusta el ancho según sea necesario */
+    background-color: #272727;
+    color: #fff;
+    padding: 1em;
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede el alto */
+    height: 200vh; /* Altura de la barra lateral igual a la altura del viewport */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilos para la lista desordenada en la barra lateral */
+#listaDesordenada {
+    list-style-type: none; /* Eliminar puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para los elementos de la lista de la barra lateral */
+#listaPrincipal {
+    margin-bottom: 0.5em; /* Espacio entre elementos de la lista principal */
+}
+
+/* Estilos para los enlaces principales de la barra lateral */
+#listaPrincipal > a {
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+    background-color: #28A745; /* Color de fondo naranja */
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 1.8em;
+    width: 80%;
+    height: 4.5vh;
+
+}
+
+#listaPrincipal > a:hover {
+    background-color: #32707a; /* Color de fondo naranja más oscuro al pasar el ratón */
+    transform: scale(1.05);
+}
+
+/* Estilos para los submenús */
+.submenu {
+    display: none; /* Ocultar el submenú por defecto */
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none; /* Eliminar puntos de lista */
+    background-color: #272727; /* Fondo del submenú */
+    border-radius: 0.5em; /* Bordes redondeados del submenú */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    position: relative; /* Mantiene el submenú en el flujo normal del documento */
+    width: 85%;
+    margin-left: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    text-align: right;
+}
+
+/* Estilos para los elementos del submenú */
+.submenu li {
+    margin-bottom: 0.5em; /* Separar verticalmente las opciones del submenú */
+}
+
+/* Estilos para los enlaces del submenú */
+.submenu li a {
+    color: #fff; /* Color del texto del submenú */
+    text-decoration: none;
+    display: block; /* Para que el padding se aplique correctamente */
+    padding: 0.5em 1em; /* Padding vertical y horizontal para el submenú */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para el submenú */
+    background-color: transparent; /* Fondo transparente para los enlaces del submenú */
+    border-radius: 0.3em; /* Bordes redondeados opcionales para el hover */
+}
+
+.submenu li a:hover {
+    background-color: #757474; /* Fondo gris claro para el submenú al pasar el ratón */
+}

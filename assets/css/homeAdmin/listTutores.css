@@ -1,0 +1,163 @@
+/* Estilos para el contenedor principal */
+#contenido-tutores {
+    width: 98%;
+    margin: 20px auto;
+    padding: 0.2em 0.6em;
+    border: 3px solid #acabab;
+    border-radius: 2em;
+    background-color: #f9f9f9;
+}
+
+#contenido-tutores h2 {
+    padding: none;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    color: black; /* Texto en negro */
+    font-size: 1.3em;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.1em 0em;
+    font-size: 0.6em;
+    text-align: left;
+    color: black; /* Texto en negro */
+}
+
+table th, table td {
+    padding: 0.5em 0.5em;
+}
+
+/*ESTILOS INDIVIDUALES PARA CADA COLUMNA DE VALORES DE LA TABLA LISTA DE TUTORES*/
+#cod_docente {
+    width: 10vh;
+}
+#nomtuto{
+    width: 23vh;
+}
+#apellidoo{
+    width: 20vh;
+}
+#dni {
+    width: 12vh;
+}
+
+#telefono {
+    width: 12vh;
+}
+#carrera {
+    width: 27vh;
+}
+#correo_institucional {
+    width: 25vh;
+}
+
+table th {
+    background-color: #272727;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #a1606e;
+    color: white;
+    border: none;
+    padding: 0.8em 0.9em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.btn:hover {
+    background-color: #c9949f;
+}
+
+/* Estilos para la paginación */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#pagination button {
+    padding: 0.5em 1em;
+    background-color: #5e464c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0 0.2em;
+    font-size: 0.9em;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pagination button:hover:not(:disabled) {
+    background-color: #bb3a4a;
+}
+
+/*Botones primera y ultima de la paginacion*/
+#pagination button2 {
+    padding: 0.5em 1em;
+    background-color: #5b7a86;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin: 0.5em 0.2em;
+    font-size: 0.9em;
+}
+
+/*ESTILOS PARA EL FILTRADO DE BUSQUEDAD*/
+/* Contenedor de búsqueda */
+#search-container {
+    margin-left: 20em;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Formulario de búsqueda */
+#search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Select y input */
+#search-form select, #search-form input {
+    padding: 8px;
+    border: 1px solid #c46b6b;
+    border-radius: 4px;
+}
+
+/* Botones */
+#search-form button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}

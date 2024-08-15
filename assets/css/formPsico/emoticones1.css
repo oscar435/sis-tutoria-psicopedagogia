@@ -1,0 +1,100 @@
+/* Estilos para el contenedor principal de los botones emocionales */
+.emoticones {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.2em;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 0.8em;
+}
+
+/* Estilos para los botones emocionales */
+.emotion-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;/* Ajusta el espacio entre los botones */
+    margin-top: 0em; /* Reduce el margen superior de los botones */
+}
+
+.emotion-button {
+    display: inline-block;
+    padding: 0em;
+    padding-top: 0.1em;
+    border-radius: 0.5em;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-size: 0.8em;
+    width: 3.5em;  /* Tamaño más pequeño */
+    height: 10vh;
+}
+
+.emotion-button i {
+    font-size: 2em;
+}
+
+.emotion-button:hover {
+    transform: scale(1.1);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .emotion-button {
+    transform: scale(1.2);
+}
+
+.emotion-very-bad {
+    border: 0.2em solid #d9534f;
+    color: #d9534f;
+}
+
+.emotion-very-bad:hover, input[type="radio"]:checked + .emotion-very-bad {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+.emotion-bad {
+    border: 0.2em solid #f0ad4e;
+    color: #f3a539;
+}
+
+.emotion-bad:hover, input[type="radio"]:checked + .emotion-bad {
+    background-color: #f0ad4e;
+    color: #ffffff;
+}
+
+.emotion-regular {
+    border: 0.2em solid #f7e048;
+    color: #e1c92e;
+}
+
+.emotion-regular:hover, input[type="radio"]:checked + .emotion-regular {
+    background-color: #f7e048;
+    color: #ffffff;
+}
+
+.emotion-good {
+    border: 0.2em solid #5bc0de;
+    color: #5bc0de;
+}
+
+.emotion-good:hover, input[type="radio"]:checked + .emotion-good {
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+.emotion-very-good {
+    border: 0.2em solid #5cb85c;
+    color: #5cb85c;
+}
+
+.emotion-very-good:hover, input[type="radio"]:checked + .emotion-very-good {
+    background-color: #5cb85c;
+    color: #ffffff;
+}
+
+

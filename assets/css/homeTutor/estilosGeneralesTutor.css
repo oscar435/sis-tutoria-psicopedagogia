@@ -1,0 +1,212 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/images/fondoEstudiantes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw;
+    background-color: #000000;
+    color: #fff;
+    width: 95.9%;
+    z-index: 1; /* Asegura que el encabezado esté encima del fondo */
+}
+
+/* Contenedor para la parte izquierda del encabezado */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/*DISEÑOS PARTE IZQUIERDA DEL HEADER*/
+/* Estilos para la información del tutor */
+.tutor-info {
+    margin-left: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.tutor-text {
+    margin-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Estilos para el nombre del tutor */
+.tutor-name {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Estilos para el código del tutor */
+.tutor-title {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+/*DISEÑOS PARTE DERECHA DEL HEADER*/
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn {
+    padding: 0.6em 1.5em;
+    background-color: #ca5050;
+    color: #fff;
+    border: none;
+    border-radius: 0.6em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.logout-btn:hover {
+    transform: scale(1.05);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#tutor-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.tutor-info {
+    flex-grow: 1;
+}
+
+.tutor-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#btn-logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#btn-logout:hover {
+    background-color: #c82333;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    z-index: 1; /* Asegura que el contenedor principal esté encima del fondo */
+}
+
+/* Estilos de la sección principal */
+.main-section {
+    background-color: #fff;
+    width: 80%;
+    margin-top: 1em;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1; /* Asegura que la sección principal esté encima del fondo */
+    height: 150vh;
+}
+
+.main-section h2 {
+    margin-top: 0;
+}
+
+/* Sidebar fija en la parte inferior */
+.sidebar {
+    background-color: #000000;
+    color: #fff;
+    width: 70%;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 0.8em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1000;
+    height: 3vh;
+    border-radius: 1em;
+}
+
+.sidebar ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo inicial del sidebar-item */
+.sidebar-item {
+    background: #ebeaea;
+    border-radius: 7em;
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s; /* Añadir transición para el zoom */
+}
+
+/* Estilo al pasar el cursor */
+.sidebar-item:hover {
+    background-color: #222222;
+    color: white;
+    transform: scale(1.1); /* Aumenta el tamaño del elemento al pasar el cursor */
+}
+
+#ver-tutorias{
+    background: #ebeaea;
+    border-radius: 7em;
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s; /* Añadir transición para el zoom */
+}
+#ver-tutorias:hover{
+    background-color: #222222;
+    color: white;
+    transform: scale(1.1); /* Aumenta el tamaño del elemento al pasar el cursor */
+}

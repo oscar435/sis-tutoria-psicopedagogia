@@ -1,0 +1,68 @@
+#add-student-form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 1em;
+    border: 3px solid #acabab;
+    border-radius: 2em;
+    background-color: #f9f9f9;
+}
+
+#add-student-form h2 {
+    text-align: center;
+    margin-top: 0.1em;
+    margin-bottom: 1.5em;
+    color: black; /* Texto en negro */
+}
+
+#add-student-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas principales */
+    grid-gap: 0.5em;
+}
+
+#add-student-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+#add-student-form label {
+    font-weight: bold;
+    color: black; /* Texto en negro */
+    margin-bottom: 0.5em;
+}
+
+#add-student-form input {
+    padding: 10px;
+    border: 1px solid #333; /* Borde más oscuro para destacar */
+    border-radius: 1.5em;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#add-student-form button {
+    width: 50%;
+    margin-left: 17em;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1.5em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#add-student-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para organizar el formulario */
+.form-group-half {
+    grid-column: span 1; /* Ocupa una columna */
+}
+
+.form-group-full {
+    grid-column: span 2; /* Ocupa ambas columnas */
+}

@@ -1,0 +1,45 @@
+Archivos
+addTutor.html
+
+Propósito: Contiene la estructura HTML del formulario para agregar un nuevo tutor.
+Ubicación: /views2/addTutor.html
+Descripción: Incluye campos para ingresar el código del docente, nombre, apellido, DNI, teléfono, correo institucional, clave del tutor y carrera. El formulario envía datos al script PHP a través de una solicitud POST.
+addTutor.css
+
+Propósito: Proporciona el estilo para el formulario de agregar un tutor.
+Ubicación: /styles/addTutor.css
+Descripción: Define un diseño horizontal para el formulario con etiquetas a la izquierda y campos de entrada a la derecha. Incluye estilos para los botones y campos de entrada.
+addTutor.js
+
+Propósito: Maneja la lógica del formulario para agregar un nuevo tutor y envía los datos al servidor.
+Ubicación: /scripts/addTutor.js
+Descripción: Al hacer clic en el botón para agregar un tutor, el script carga el formulario en el contenido principal, gestiona el envío del formulario mediante fetch, y muestra mensajes de éxito o error según la respuesta del servidor.
+add_tutor_action.php
+
+Propósito: Procesa la solicitud de agregar un nuevo tutor a la base de datos.
+Ubicación: /views2/add_tutor_action.php
+Descripción: Recibe los datos del formulario y los inserta en la base de datos gestion_tuto_psico en la tabla tutor. Utiliza PDO para gestionar la conexión y la consulta SQL.
+
+
+
+Procedimiento
+Interfaz de Usuario:
+
+El usuario accede a la interfaz para agregar un nuevo tutor a través del botón "Agregar Tutor".
+El formulario se presenta en una disposición horizontal con las etiquetas a la izquierda y los campos de entrada a la derecha.
+
+Envío del Formulario:
+
+El usuario completa el formulario y hace clic en el botón "Agregar Tutor".
+El formulario se envía utilizando el método POST al archivo add_tutor_action.php a través de una solicitud fetch desde el archivo addTutor.js.
+Procesamiento del Servidor:
+
+add_tutor_action.php recibe los datos del formulario.
+El script prepara una consulta SQL para insertar los datos en la tabla tutor de la base de datos.
+La consulta se ejecuta utilizando PDO, y se maneja cualquier error potencial.
+Respuesta y Mensaje:
+
+El archivo PHP devuelve un mensaje que indica si la operación fue exitosa o si ocurrió un error.
+addTutor.js recibe la respuesta y muestra un mensaje en la interfaz de usuario, indicando el resultado de la operación.
+
+

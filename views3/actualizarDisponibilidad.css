@@ -1,0 +1,132 @@
+/* Estilos generales del formulario */
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.25rem; /* 20px */
+    background-color: #f8f9fa;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+    box-sizing: border-box;
+    height: 130vh;
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 0.2rem; /* 16px */
+    color: #333;
+    font-size: 1.5rem; /* 24px */
+    margin-top: 0.1em;
+}
+
+/* Estilo de los títulos de grupo (h4) */
+h4 {
+    margin-top: 2em;
+    margin-bottom: 1rem; /* 16px */
+    color: #184366;
+    font-size: 1rem; /* 20px */
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilo de las etiquetas y los elementos de formulario */
+label {
+    display: block;
+    margin-bottom: 0.2rem; /* 8px */
+    font-weight: bold;
+    color: #555;
+    font-size: 1rem; /* 16px */
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    width: 70%;
+    padding: 0.4rem; /* 10px */
+    border: 1px solid #acacac;
+    background-color: #e6e5e5;
+    border-radius: 0.3125rem; /* 5px */
+    margin-bottom: 1rem; /* 15px */
+    box-sizing: border-box;
+    font-size: 1rem; /* 16px */
+}
+
+/* Ajustar el tamaño del textarea */
+textarea {
+    resize: vertical;
+    height: 4rem; /* 100px */
+}
+
+/* Agrupación de elementos en filas horizontales */
+.horizontal-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem; /* 20px */
+    margin: 0em;
+}
+
+/* Contenedor de elementos */
+.input-wrapper {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Ajustes en las etiquetas dentro de los input-wrapper */
+.input-wrapper label {
+    margin-bottom: 0.7rem; /* 5px */
+}
+
+/* Estilo de los botones */
+button {
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    margin-right: 0.625rem; /* 10px */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #f8f6f6;
+    background: #dc3545;
+    font-size: 1rem; /* 16px */
+    margin-left: 0.625rem; /* 10px */
+    padding: 0.5em 0.4em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de botones centrado */
+.buttons-container {
+    text-align: center;
+}
+
+/* Estilo del grupo de elementos */
+.form-group {
+    margin-bottom: 0.1em; /* 20px */
+}
+
+/* Estilo específico para el campo de selección de disponibilidad */
+#select-disponibilidad {
+    width: calc(50% - 1.25rem); /* Ajustar el ancho para que coincida con otros elementos */
+    margin-bottom: 0.8rem; /* 20px */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .horizontal-group {
+        flex-direction: column;
+    }
+
+    .input-wrapper {
+        min-width: auto;
+    }
+}

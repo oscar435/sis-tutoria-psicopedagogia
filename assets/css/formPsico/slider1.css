@@ -1,0 +1,235 @@
+/* Estilos para el contenedor del slider */
+.slider{
+    width: 60%;
+    height: 5vh;
+    margin-left: 13em;
+    margin-top: 0.1em;
+    padding-top: 0em;
+    margin-bottom: 1.2em;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 0.1em;
+    margin-top: 0.1em;
+    
+}
+
+input[type="range"] {
+    width: 60%;
+}
+
+#sliderValue {
+    font-size: 1.2em;
+    color: #1876cd;
+}
+
+
+/* Estilos para los botones de calificación(pregunta3) */
+/* Estilos para las estrellas de calificación */
+.escala {
+    width: 70%;
+    margin: auto;
+    height: 6vh;
+    margin-bottom: 1em;
+    margin-top: 0em;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 0.2em; /* Espacio entre estrellas */
+    margin-top: 0.1em;
+    position: relative; /* Necesario para posicionar el número */
+}
+
+.star {
+    font-size: 1.5em; /* Tamaño de las estrellas */
+    color: #949494; /* Color de las estrellas desmarcadas */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+input[type="radio"] {
+    display: none; /* Ocultar los radios */
+}
+
+/* Cambia el color de todas las estrellas a la izquierda de la seleccionada */
+.rating-stars input[type="radio"]:checked ~ label.star {
+    color: #f39c12; /* Color de las estrellas seleccionadas */
+}
+
+/* Cambia el color de todas las estrellas a la derecha de la estrella seleccionada al pasar el cursor */
+.rating-stars label.star:hover,
+.rating-stars input[type="radio"]:checked ~ label.star:hover,
+.rating-stars input[type="radio"]:checked ~ label.star ~ label.star {
+    color: #949494; /* Color de las estrellas cuando se pasa el cursor */
+}
+
+/* Estilos para el número seleccionado */
+.selected-number {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    right: 0; /* Ajusta esto si el número sigue estando demasiado cerca de las estrellas */
+    top: 50%;
+    transform: translateY(-35%); /* Mantiene el número centrado verticalmente */
+    margin-right:0em; /* Añade un margen derecho para alejarlo más de las estrellas */
+}
+
+
+/*pregunta 4*/
+/* Estilos para los botones de opción */
+.opcionesActividad{
+    height: 7vh;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 1.8em;
+}
+.option-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid #B87474;
+    border-radius: 0.5em;
+    background-color: #ffffff;
+    color: #B87474;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+.option-button:hover {
+    background-color: #b4a09e;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.option-button.active {
+    background-color: #533B39;
+    color: #614f4f;
+    border-color: #533B39;
+}
+.option-button.selected {
+    background-color: #533B39; /* Color de fondo cuando está seleccionado */
+    color: white; /* Color del texto cuando está seleccionado */
+}
+
+
+/*Quinta pregunta */
+
+/* Estilos para el select */
+select {
+    width: 30%;
+    padding: 0.2em;
+    border: 2px solid #533B39;
+    border-radius: 0.5em;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin: auto;
+}
+
+select:focus {
+    border-color: #0056b3;
+    background-color: #f8f9fa;
+}
+
+/* Estilo para el contenedor de la pregunta para mantener el espaciado adecuado */
+.question-container {
+    margin-bottom: 1.5em; /* Ajusta el espaciado entre preguntas */
+}
+
+
+/*Septima pregunta */
+/* Estilos para la séptima pregunta */
+#stress_management {
+    width: 70%; /* Ocupa el ancho completo del contenedor */
+    margin: auto;
+    max-width: 600px; /* Tamaño máximo del área de texto */
+    padding: 0.8em; /* Espacio interno para que el texto no quede pegado a los bordes */
+    border: 1px solid #9e9e9e; /* Borde gris claro */
+    border-radius: 0.5em; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente del texto */
+    color: #333; /* Color del texto */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilo del contenedor de la pregunta para centrar el contenido */
+#stress_management_container {
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    width: 90%; /* Ocupa el 90% del ancho del contenedor padre */
+    max-width: 700px; /* Tamaño máximo del contenedor */
+}
+/*Octava PREGUNTA*/
+/* Estilos para la octava pregunta */
+.balance-options{
+    width: 60%;
+    margin: auto;
+    gap: 0.9em;
+    margin-bottom: 2em;
+}
+
+/*Decima pregunta*/
+/* Estilos para la décima pregunta */
+/* Estilos para la décima pregunta */
+.pregunta10 {
+    display: block;
+    margin-bottom: 0.5em; /* Espacio inferior */
+    font-size: 1em; /* Tamaño de fuente */
+    margin-left: 0.5em;
+    margin-top: 3em;
+
+}
+
+.contact-info {
+    display: flex; /* Usa flexbox para alinear los bloques horizontalmente */
+    gap: 2em; /* Espacio entre los bloques */
+    margin-top: 0.5em; /* Espacio superior */
+    margin-bottom: 3.5em;
+}
+
+.input-group1,
+.input-group2 {
+    flex: 1; /* Hace que ambos bloques ocupen el mismo ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em; /* Espacio entre la etiqueta y el campo */
+    padding-top: 0.1em;
+
+
+}
+
+.phoneTitle,
+.correoTitle {
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0.2em; /* Espacio inferior */
+    font-size: 0.8em;
+    padding-top: 0.1em;
+}
+
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #533B39; /* Color del borde en foco */
+    outline: none; /* Elimina el contorno por defecto del navegador */
+}
+
+
